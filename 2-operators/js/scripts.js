@@ -58,3 +58,10 @@ console.log(5 < 2 || "Ruan" === 1) // true
 console.log(5 < 2 || 5 > 100) // false
 console.log(!true) // false
 console.log(!5 > 2) // false
+
+// empty value
+console.log(typeof null, typeof undefined) // object, undefined
+console.log(null == undefined) // true
+console.log(null === undefined) // false
+console.log(null == false) // false
+console.log(undefined == false) // false
