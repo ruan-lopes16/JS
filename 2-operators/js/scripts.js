@@ -43,3 +43,8 @@ console.log(5 < 5) // false
 console.log(10 == 10) // true
 console.log(10 == 9) // false
 console.log(10 != 9) // true
+
+// 10 - identical
+console.log(9 === "9") // false
+console.log(9 != "9") // false
+console.log(9 !== "9") // true
