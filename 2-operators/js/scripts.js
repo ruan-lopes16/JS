@@ -65,3 +65,9 @@ console.log(null == undefined) // true
 console.log(null === undefined) // false
 console.log(null == false) // false
 console.log(undefined == false) // false
+
+// 13 - change of types
+console.log(5 * null) // 0
+console.log("teste" * "ok") // Nan
+console.log("10" + 1) // 101
+console.log("10" - 1) // 9
