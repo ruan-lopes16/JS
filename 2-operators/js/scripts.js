@@ -36,3 +36,10 @@ console.log(`We can run anything here: ${console.log("Test")}`)
 console.log(true)
 console.log(5 > 20) // false
 console.log(30 > 10) // true
+
+// 9 - comparison
+console.log(5 <= 5) // true
+console.log(5 < 5) // false
+console.log(10 == 10) // true
+console.log(10 == 9) // false
+console.log(10 != 9) // true
