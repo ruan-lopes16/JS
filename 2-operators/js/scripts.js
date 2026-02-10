@@ -31,3 +31,8 @@ console.log("Hi," + " how are" + " you?")
 // 7 - text interpolation - template String
 console.log(`The sum of 2 + 2 is: ${2 + 2}`)
 console.log(`We can run anything here: ${console.log("Test")}`)
+
+// 8 - boolean
+console.log(true)
+console.log(5 > 20) // false
+console.log(30 > 10) // true
