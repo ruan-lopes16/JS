@@ -48,3 +48,13 @@ console.log(10 != 9) // true
 console.log(9 === "9") // false
 console.log(9 != "9") // false
 console.log(9 !== "9") // true
+
+// 11 - logical operators
+console.log(true && true) // true
+console.log(true && false) // false
+console.log(5 > 2 && 2 < 10) // true
+console.log(5 < 2 && "Ruan" === 1) // false
+console.log(5 < 2 || "Ruan" === 1) // true
+console.log(5 < 2 || 5 > 100) // false
+console.log(!true) // false
+console.log(!5 > 2) // false
