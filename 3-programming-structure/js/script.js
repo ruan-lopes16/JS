@@ -35,3 +35,8 @@ console.log(FullName)
 let _test = "ok"
 let $test = "ok, ok"
 console.log(_test, $test)
+
+/////////////////
+// 3 - prompt
+const age_ = prompt("Type your age: ")
+console.log(`You are ${age_} years old`)
