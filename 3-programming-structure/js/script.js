@@ -1,3 +1,4 @@
+/*
 // 1 - variables
 let name = "Ruan"
 console.log(name)
@@ -55,3 +56,69 @@ console.log(Math.ceil(3.74))
 // 6 - console
 console.error("error!")
 console.warn("warning!")
+*/
+
+// 7 - if
+const number = 10
+
+if(number > 5){
+    console.log("number is greater than 5")
+}
+
+const user = "Ruan"
+
+if(user === "Ruan"){
+    console.log(`Hello ${user}`)
+}
+
+if(user === "Ana"){
+    console.log(`Hello ${user}`)
+}
+
+// validando
+console.log(user === "Ruan", user === "Ana")
+
+// 8 - else
+const loggedIn = false
+
+if(loggedIn){
+    console.log("Is authenticated")
+
+} else {
+    console.log("Not authenticated, you must login")
+}
+
+const q = 10
+const w = 15
+
+if(1 > 5 && w > 20){
+    console.log("higher numbers")
+
+} else {
+    console.log("the numbers are not higher")
+}
+
+// 9 - else if
+if(1 > 2){
+    console.log("test")
+    
+} else if(2 > 3){
+    console.log("test 2")
+
+} else if(5 > 1){
+    console.log("yes baby")
+
+}
+
+const userName = "Ruan"
+const userAge = 22
+
+if(userName === "Ana"){
+    console.log("Welcome, Ana!")
+
+} else if(userName === "Ruan" && userAge == 22){
+    console.log("Hey Ruan, you are 22 years old")
+
+} else{
+    console.log("No conditions accepted")
+}
