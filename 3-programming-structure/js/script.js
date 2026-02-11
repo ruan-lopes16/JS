@@ -42,7 +42,12 @@ console.log(_test, $test)
 //console.log(`You are ${age_} years old`)
 
 // 4 - alert
-alert("Testing")
+//alert("Testing")
 
-const z = 10
-alert(`Number is ${z}`)
+//const z = 10
+//alert(`Number is ${z}`)
+
+// 5 - math
+console.log(Math.max(5, 2, 1, 10))
+console.log(Math.floor(3.14))
+console.log(Math.ceil(3.74))
