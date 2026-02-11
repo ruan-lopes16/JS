@@ -51,3 +51,7 @@ console.log(_test, $test)
 console.log(Math.max(5, 2, 1, 10))
 console.log(Math.floor(3.14))
 console.log(Math.ceil(3.74))
+
+// 6 - console
+console.error("error!")
+console.warn("warning!")
