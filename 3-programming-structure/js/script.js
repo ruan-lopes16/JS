@@ -38,5 +38,11 @@ console.log(_test, $test)
 
 /////////////////
 // 3 - prompt
-const age_ = prompt("Type your age: ")
-console.log(`You are ${age_} years old`)
+//const age_ = prompt("Type your age: ")
+//console.log(`You are ${age_} years old`)
+
+// 4 - alert
+alert("Testing")
+
+const z = 10
+alert(`Number is ${z}`)
