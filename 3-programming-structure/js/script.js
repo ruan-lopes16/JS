@@ -56,7 +56,6 @@ console.log(Math.ceil(3.74))
 // 6 - console
 console.error("error!")
 console.warn("warning!")
-*/
 
 // 7 - if
 const number = 10
@@ -122,3 +121,30 @@ if(userName === "Ana"){
 } else{
     console.log("No conditions accepted")
 }
+*/
+
+// 10 - while
+let p = 0
+
+while(p < 5){
+    console.log(`repeating ${p}`)
+    p += 1
+}
+
+// infinity loop
+/*
+let x = 10
+while(x > 5) {
+    console.log(x)
+    x += 1
+}
+*/
+
+// 11 - do while
+let o = 10
+
+do{
+    console.log(`value of o: ${o}`)
+    o--
+
+} while(o > 1)
