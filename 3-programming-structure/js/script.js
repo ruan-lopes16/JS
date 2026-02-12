@@ -182,3 +182,19 @@ for(let s = 0; s < 10; s++){
     // toda vez que não for par, exibe o numero
     console.log(s)
 }
+
+// 16 - switch
+const job = "Developer"
+
+switch(job){
+    case "Lawyer" : console.log("You're a Lawyer")
+    break
+
+    case "Developer": console.log("You're a Developer")
+    break
+
+    case "Engineer": console.log("You're a Engeneer")
+    break
+
+    default: console.log("Job not found")
+}
