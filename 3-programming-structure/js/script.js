@@ -158,3 +158,27 @@ r = 10
 for(r; r > 0; r--){
     console.log(`r is decreasing ${r}`)
 }
+
+// 13 - identation
+// ... 
+// 14 - break
+for(let g = 20; g > 10; g--){
+    console.log(`g value: ${g}`)
+
+    if(g === 15){
+        console.log("g is 15")
+        break
+    }
+}
+
+// 15 - continue
+for(let s = 0; s < 10; s++){
+    // operador de resto = %
+    if(s % 2 == 0){
+        console.log(`pair`)
+        continue
+    } // toda vez que for par, executa o console "pair"
+
+    // toda vez que não for par, exibe o numero
+    console.log(s)
+}
