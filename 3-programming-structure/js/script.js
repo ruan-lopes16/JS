@@ -148,3 +148,13 @@ do{
     o--
 
 } while(o > 1)
+
+// 12 - for
+for(let i = 0; i < 10; i++){
+    console.log(`repeating ${i}`)
+}
+
+r = 10
+for(r; r > 0; r--){
+    console.log(`r is decreasing ${r}`)
+}
