@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises - look on console</title>
+</head>
+<body>
+    <h1>Exercise 7</h1>
+    <p>
+        Ask the user for a number and use for to generate the multiplication table for that number (from 1 to 10). 
+    Use Math to format the multiplication results.
+    </p>
+    <script >
+        let num = Number(prompt("Enter a number to see your multiplication table: "))
+
+        for(let i = 0; i <= 10; i++){
+            console.log(`${num} x ${i} = ${num*i}`)
+        }
+    </script>
+
+    <h1>Exercise 8</h1>
+    <p>
+        Use switch to create a menu with 4 options:
+    </p>
+    <ul>
+        <li>View greeting</li>
+        <li>View current date/time</li>
+        <li>Generate random number (Math.random)</li>
+        <li>Exit</li>
+    </ul>
+    <script>
+        console.log("1 - greeting\n2 - current timestamp\n3 - random number\n4 - exit")
+        let entry = Number(prompt("Enter a number between 1 and 4: "))
+        
+        switch(entry){
+            case 1: console.log("Hello world");
+                break;
+            case 2: console.log(Date.now());
+                break;
+            case 3: console.log(Math.random());
+                break;
+            default: console.log("Bye bye!");   
+        }
+    </script>
+
+    <h1>Exercise 10</h1>
+    <p>
+        Generate a random number from 1 to 10 (Math.random and Math.floor) <br>
+        - Use do while to ask for guesses until correct
+        - Give hints if the number is higher or lower
+        - Use break when correct
+        - Count how many attempts it took
+    </p>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 10) + 1
+        let userNumber
+        let attempts = 0
+
+        do{
+            userNumber = Number(prompt("Type a number(1 - 10): "))
+            attempts++
+
+            if(userNumber === randomNumber){
+                console.log(`Correct! The number was ${randomNumber}`)
+                console.log(`You took ${attempts} attempts`)
+                break 
+
+            } else if(userNumber > randomNumber){
+                console.log("Your number is greater\n")
+
+            } else {
+                console.log("Your number is smaller\n")
+
+            }
+
+        } while(userNumber != randomNumber)
+    </script>
+</body>
+</html>
