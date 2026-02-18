@@ -66,3 +66,38 @@ function nestedScope(){
 
 nestedScope()
 console.log(m)
+
+// 5 - arrow function
+const testArrow = () => {
+    console.log("This is arrow function")
+}
+
+testArrow()
+
+const pairOrOdd = (n) => {
+    if(n % 2 == 0){
+        console.log("Pair")
+        return  // sai da condição ao satisfazer condição - early return
+
+    }
+    // se passar do if, é impar
+    console.log("Odd")
+}
+pairOrOdd(2)
+
+// 6 - mais sobre arrow
+// normal
+const squareRoot = (x) => {
+    return x * x
+
+}
+console.log(squareRoot(5))
+
+// sem escopo de bloco
+const squareRoot2 = (x) => x * x
+
+console.log(squareRoot2(6))
+console.log(squareRoot2(15))
+
+const helloWorld = () => console.log("Hello World!")
+helloWorld()
