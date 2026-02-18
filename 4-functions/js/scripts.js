@@ -32,3 +32,37 @@ function sum(n1, n2){
 const result = sum(a, b)
 console.log(result)
 console.log(sum(c, d))
+
+// 3 - escopos
+let y = 10
+
+function testingScope(){
+    let y = 20
+    console.log(`y inside a function is: ${y} `)
+}
+
+testingScope()
+console.log(`y outside a function is ${y}`)
+testingScope()
+
+// 4 - escopo aninhado (nested scopes)
+let m = 10
+
+function nestedScope(){
+    let m = 20
+
+    if(true){
+        let m = 30
+
+        if(true){
+            let m = 40
+
+            console.log(m)
+        }
+         console.log(m)
+    }
+     console.log(m)
+}
+
+nestedScope()
+console.log(m)
