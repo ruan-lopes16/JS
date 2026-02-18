@@ -141,3 +141,34 @@ const repeatText = (text, repeat = 2) => {
 
 repeatText("Testing")
 repeatText("Now reapeat 5 times", 5)
+
+// 9 - 10 - closures
+function sumFunction() {
+    let txt = "Something"
+
+    function display(){
+        console.log(txt)
+
+    }
+
+    display()
+}
+
+sumFunction()
+
+// 10
+const multiplicationClosure = (n) => {
+    return(m) => {
+        return n * m
+    }
+}
+
+const c1 = multiplicationClosure(5)
+const c2 = multiplicationClosure(10)
+
+console.log(c1) // salva função da closure  return(m) => { return n * m }, mas 5 e 10 ainda estão ali
+console.log(c2)
+
+// usando os dados guardados > função
+console.log(c1(5))
+console.log(c2(10))
