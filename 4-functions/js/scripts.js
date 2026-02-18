@@ -101,3 +101,43 @@ console.log(squareRoot2(15))
 
 const helloWorld = () => console.log("Hello World!")
 helloWorld()
+
+// 7 - parametro opcional
+const multiplication = function(m, n){
+    if(n === undefined){ // argumento passado ou não -> nesse caso não passado
+        return m * 2
+
+    } else {
+        return m * n
+
+    }
+}
+console.log(multiplication(5))
+console.log(multiplication(2, 4))
+
+const greeting = (name) => {
+    if(!name){
+        console.log("Hello")
+        return
+    }
+    console.log(`Hello ${name}`)
+}
+
+greeting()
+greeting("Ruan")
+
+// 8 - valor default
+const customGreeting = (name, greet = "Hey") => {
+    return `${greet}, ${name}`
+}
+
+console.log(customGreeting("Ruan"))
+console.log(customGreeting("Ana", "Good morning"))
+
+const repeatText = (text, repeat = 2) => {
+    for(let i = 0; i < repeat; i++)
+        console.log(text)
+}
+
+repeatText("Testing")
+repeatText("Now reapeat 5 times", 5)
