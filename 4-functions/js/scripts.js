@@ -172,3 +172,38 @@ console.log(c2)
 // usando os dados guardados > função
 console.log(c1(5))
 console.log(c2(10))
+
+// 11 - recursion
+const untilTen = (n, m) => {
+    if(n < 10){
+        console.log("Function stopped")
+    } else {
+        const x = n - m
+        console.log(x)
+
+        untilTen(x, m)
+    }
+}
+untilTen(100, 7)
+
+// infinite recursion
+function run(){
+    console.log("Executing")
+    run()
+}
+
+// run()
+
+//
+function factorial(x){
+    if(x === 0){
+        return 1
+    } else {
+        return x * factorial(x - 1)
+    }
+}
+
+const num = 6
+const result1 = factorial(num)
+
+console.log(`Fatorial of ${num}: ${result1}`)
