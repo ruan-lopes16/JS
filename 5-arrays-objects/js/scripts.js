@@ -31,3 +31,55 @@ console.log(text.toUpperCase())
 console.log(typeof toUpperCase) // function >>> mas é o tecnico é método
 
 console.log(text.indexOf('t')) // posição de um caractere em uma string >>> primeira evidencia
+
+// 5 - objetos
+const person = {
+    name: "Ruan",
+    age: 22,
+    job: "Developer"
+}
+
+console.log(person) // acessando todas propriedades
+console.log(person.name) // acessando o nome
+console.log(person.job.length) // propriedade de um objeto
+console.log(typeof person) // object
+
+// 6 - removendo e criando propriedades
+const car = {
+    engine: 1.0,
+    brand: "VW",
+    model: "Up!",
+    km: 108000
+}
+
+console.log(car)
+
+car.doors = 4 // adicionando propriedade
+console.log(car)
+
+delete car.km // removendo propriedade
+console.log(car)
+
+// 7 - mais sobre objetos
+const obj = {
+    a: "test",
+    b: true
+}
+
+console.log(obj instanceof Object) // ver se objeto é filho de uma classe >>>> true
+// os objetos literais herando todos do Object
+
+const obj2 = {
+    c: []
+}
+
+// copiando propriedades
+Object.assign(obj2, obj) // objeto final (para onde vai), de onde vou copiar os dados
+console.log(obj2)
+
+// 8 - keys e entries
+console.log(Object.keys(obj)) // vejo as propriedades
+console.log(Object.keys(obj2))
+
+console.log(Object.entries(obj)) // consigo chave e valor
+console.log(Object.entries(car))
