@@ -83,3 +83,24 @@ console.log(Object.keys(obj2))
 
 console.log(Object.entries(obj)) // consigo chave e valor
 console.log(Object.entries(car))
+
+
+// 9 - mutação
+const a = {
+    name: "Ruan"
+}
+
+const b = a
+
+console.log(a)
+console.log(b)
+
+console.log (a === b) // vendo é = 
+
+a.age = 22
+console.log(a)
+console.log(b) // b tambem ganha age
+
+delete b.age
+console.log(a) // a sofre a remoção também
+console.log(b) 
