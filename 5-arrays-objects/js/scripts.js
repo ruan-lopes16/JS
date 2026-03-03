@@ -141,3 +141,24 @@ console.log(letters)
 letters.unshift("a", "b", "c") // adicionando as primeiras letras
 letters.unshift("x")
 console.log(letters)
+
+// 13 - indexOf e lastIndexOf
+const myElements = [
+    "strawberry",
+    "apple",
+    "avocado",
+    "pear",
+    "avocado" // proposital
+]
+
+console.log(myElements.indexOf("apple"))
+console.log(myElements.indexOf("avocado")) // me da a primeira ocorrencia
+
+console.log(myElements[2])
+console.log(myElements[myElements.indexOf("avocado")])
+
+console.log(myElements.lastIndexOf("avocado")) // ultima ocorrência
+
+console.log(myElements.lastIndexOf("mango")) // não existe
+console.log(myElements.indexOf("mango")) // não existe
+
