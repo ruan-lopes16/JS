@@ -129,3 +129,15 @@ console.log(array)
 
 array.push("z", "x", "y") // posso adicionar mais de um item de uma vez
 console.log(array)
+
+// 12 - shift e unshift
+const letters = ["p", "q", "r"]
+console.log(letters)
+
+const letterRemoved = letters.shift() // removendo a primeira letra
+console.log(letterRemoved)
+console.log(letters)
+
+letters.unshift("a", "b", "c") // adicionando as primeiras letras
+letters.unshift("x")
+console.log(letters)
