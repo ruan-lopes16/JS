@@ -162,3 +162,19 @@ console.log(myElements.lastIndexOf("avocado")) // ultima ocorrência
 console.log(myElements.lastIndexOf("mango")) // não existe
 console.log(myElements.indexOf("mango")) // não existe
 
+// 14 - slice
+const sliceTest = ["a", "b", "c", "d", "e", "f", "g"]
+
+const subArray = sliceTest.slice(2,4) // do segundo ao quarto, porém conta menos 1, com isso, da somente os 'c' e 'd'
+
+console.log(subArray) // somente o que eu pedi
+console.log(sliceTest) // completo e não modifica
+
+const subArray1 = sliceTest.slice(2,4 + 1) // resolve o problema do teste anterior
+console.log(subArray1)
+
+const subArray2 = sliceTest.slice(10, 20) // não existe
+console.log(subArray2) // lista vazia
+
+const subArray3 = sliceTest.slice(2) // somente o indice inicial
+console.log(subArray3) // do 2 em diante
