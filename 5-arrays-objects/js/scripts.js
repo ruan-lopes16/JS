@@ -112,3 +112,20 @@ for(let i = 0; i < users.length; i++){
     console.log(`Listing user: ${users[i]}`)
 }
 
+// 11 - manipulando arrays > push e pop
+const array = ["a", "b", "c"]
+
+array.push("d") // adicionando elemento ao final do array
+
+console.log(array)
+console.log(array.length)
+
+array.pop() // removendo ultimo elemento
+console.log(array)
+
+const removedItem = array.pop() // vendo qual item foi removido
+console.log(removedItem)
+console.log(array)
+
+array.push("z", "x", "y") // posso adicionar mais de um item de uma vez
+console.log(array)
