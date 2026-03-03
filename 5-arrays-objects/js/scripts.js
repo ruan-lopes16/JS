@@ -104,3 +104,11 @@ console.log(b) // b tambem ganha age
 delete b.age
 console.log(a) // a sofre a remoção também
 console.log(b) 
+
+// 10 - loops em array
+const users = ["Ruan", "Ana", "Cássio", "Carla"]
+
+for(let i = 0; i < users.length; i++){
+    console.log(`Listing user: ${users[i]}`)
+}
+
