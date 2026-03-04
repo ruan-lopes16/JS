@@ -255,3 +255,6 @@ const stringItemsToBuy = `We need to buy: ${itemsToBuy.join(", ")}.`
 
 console.log(stringItemsToBuy)
 
+// 22 - repeat
+const word = "testing "
+console.log(word.repeat(5))
