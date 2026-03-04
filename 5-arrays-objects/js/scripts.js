@@ -241,3 +241,17 @@ const phrase = "The mouse gnawed through the clothes of the king of Rome"
 const phraseArray = phrase.split(" ") // definindo separador
 
 console.log(phraseArray) // lista com cada palavra
+
+// 21 - join
+const backPhrase = phraseArray.join(" ")
+console.log(backPhrase)
+
+const itemsToBuy = [
+    "Mouse", "Keyboard", "Monitor", "Headset"
+]
+
+//const stringItemsToBuy = itemsToBuy.join(", ")
+const stringItemsToBuy = `We need to buy: ${itemsToBuy.join(", ")}.`
+
+console.log(stringItemsToBuy)
+
