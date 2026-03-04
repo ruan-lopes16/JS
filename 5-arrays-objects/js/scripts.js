@@ -178,3 +178,20 @@ console.log(subArray2) // lista vazia
 
 const subArray3 = sliceTest.slice(2) // somente o indice inicial
 console.log(subArray3) // do 2 em diante
+
+// 15 - foreach
+const nums = [1, 2, 3, 4 ,5]
+            // coloca uma função anônima ex. arrow function
+nums.forEach((n) => {
+    console.log(`number is: ${n}`)
+})
+
+const posts = [
+    {title: "First post", category: "PHP"},
+    {title: "Second post", category: "JS"},
+    {title: "Third post", category: "HTML"}
+]
+
+posts.forEach((post) => {
+    console.log(`Displaying post ${post.title}, from category ${post.category} `)
+})
