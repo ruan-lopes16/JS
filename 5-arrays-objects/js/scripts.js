@@ -258,3 +258,18 @@ console.log(stringItemsToBuy)
 // 22 - repeat
 const word = "testing "
 console.log(word.repeat(5))
+
+// 23 - rest operator
+const infinitSum = (...args) => {
+
+    let total = 0
+
+    for(let i = 0; i < args.length; i++){
+        total += args[i]
+    }
+    return total
+}
+
+console.log(infinitSum(1, 2, 3))
+
+console.log(infinitSum(2, 45, 412, 123, 4355, 23, 66, 523, 777))
