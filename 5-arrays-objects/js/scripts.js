@@ -206,3 +206,10 @@ console.log(brands.includes("GWM")) // false
 if(brands.includes("BMW")){
     console.log("There are BMW cars!")
 }
+
+// 17 - reverse
+const reverseTest = [1, 2, 3, 4, 5]
+
+reverseTest.reverse()
+
+console.log(reverseTest) // inverteu a ordem dos elementos
