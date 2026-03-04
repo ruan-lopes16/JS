@@ -213,3 +213,12 @@ const reverseTest = [1, 2, 3, 4, 5]
 reverseTest.reverse()
 
 console.log(reverseTest) // inverteu a ordem dos elementos
+
+// 18 - string - trim
+const trimTest = "      testing \n     "
+
+console.log(trimTest)
+console.log(trimTest.trim())
+
+console.log(trimTest.length) // 20
+console.log(trimTest.trim().length) // 7
