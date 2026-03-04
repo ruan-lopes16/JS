@@ -195,3 +195,14 @@ const posts = [
 posts.forEach((post) => {
     console.log(`Displaying post ${post.title}, from category ${post.category} `)
 })
+
+// 16 - includes
+const brands = ["BMW", "VW", "Fiat"]
+
+console.log(brands.includes("Fiat")) // true
+console.log(brands.includes("GWM")) // false
+
+// exemplo de uso
+if(brands.includes("BMW")){
+    console.log("There are BMW cars!")
+}
