@@ -234,3 +234,10 @@ console.log(newNumber)
 // ao contrario do padStart, coloca texto ao final da string
 const testPadEnd = newNumber.padEnd(10, "0")
 console.log(testPadEnd)
+
+// 20 - split
+const phrase = "The mouse gnawed through the clothes of the king of Rome"
+
+const phraseArray = phrase.split(" ") // definindo separador
+
+console.log(phraseArray) // lista com cada palavra
