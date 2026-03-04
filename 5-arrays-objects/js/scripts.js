@@ -222,3 +222,15 @@ console.log(trimTest.trim())
 
 console.log(trimTest.length) // 20
 console.log(trimTest.trim().length) // 7
+
+// 19 - padStart
+const padStartTest = "1" 
+
+const newNumber = padStartTest.padStart(4, "0") // string terá 4 digitos e quero preencher esse espaço com 0(zero)
+
+console.log(padStartTest)
+console.log(newNumber)
+
+// ao contrario do padStart, coloca texto ao final da string
+const testPadEnd = newNumber.padEnd(10, "0")
+console.log(testPadEnd)
