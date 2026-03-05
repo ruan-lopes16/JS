@@ -287,3 +287,17 @@ const InfiniteSum2 = (...args) => {
 
 console.log(InfiniteSum2(1, 3 , 6))
 console.log(InfiniteSum2(34, 545, 2, 21, 56))
+
+// 25 - Desestruturando arrays
+const userDetails = {
+    firstName: "Ruan",
+    lastName: "Lopes",
+    job: "Dev"
+}
+
+const {firstName, lastName, job} = userDetails // nome das prop, identifica que há props no objeto com o mesmo nome, com isso cria-se variaveis. Dai preciso dizer de onde é essas props
+console.log(firstName, lastName, job)
+
+// renomear variaveis
+const {firstName: fName} = userDetails // renomeio e digo de qual objeto pertence
+console.log(fName)
