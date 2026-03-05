@@ -308,3 +308,31 @@ const myList =  ["Airplane", "Submarine", "Car"]
 const [vehicleA, vehicleB, vehicleC] = myList
 
 console.log(vehicleA, vehicleB, vehicleC)
+
+// 27 - json
+const myJson = '{"name": "Ruan","age": 22, "skills": ["JS", "HTML", "CSS"]}'
+
+console.log(myJson)
+console.log(typeof myJson)
+
+// 28 - convertendo JSON
+const myObject = JSON.parse(myJson) // string para json
+
+console.log(myObject)
+console.log(myObject.name, myObject.age)
+
+myObject.isOpenToWork = true // add prop
+
+console.log(myObject)
+console.log(typeof myObject)
+
+// voltando para string
+const backStringJson = JSON.stringify(myObject)
+
+console.log(backStringJson)
+console.log(typeof backStringJson)
+
+// json invalido
+const badJson = '{"name": Ruan, "age": 22}'
+
+const myBadObject = JSON.parse(badJson)
