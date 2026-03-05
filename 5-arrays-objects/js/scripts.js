@@ -288,7 +288,7 @@ const InfiniteSum2 = (...args) => {
 console.log(InfiniteSum2(1, 3 , 6))
 console.log(InfiniteSum2(34, 545, 2, 21, 56))
 
-// 25 - Desestruturando arrays
+// 25 - Desestruturando objetos 
 const userDetails = {
     firstName: "Ruan",
     lastName: "Lopes",
@@ -301,3 +301,10 @@ console.log(firstName, lastName, job)
 // renomear variaveis
 const {firstName: fName} = userDetails // renomeio e digo de qual objeto pertence
 console.log(fName)
+
+// 26 - Desestruturando arrays
+const myList =  ["Airplane", "Submarine", "Car"]
+
+const [vehicleA, vehicleB, vehicleC] = myList
+
+console.log(vehicleA, vehicleB, vehicleC)
