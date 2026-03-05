@@ -273,3 +273,17 @@ const infinitSum = (...args) => {
 console.log(infinitSum(1, 2, 3))
 
 console.log(infinitSum(2, 45, 412, 123, 4355, 23, 66, 523, 777))
+
+// 24 - for of
+const InfiniteSum2 = (...args) => {
+    let total = 0
+
+    for(num of args){ // "numero de args"
+        total += num
+    }
+
+    return total
+}
+
+console.log(InfiniteSum2(1, 3 , 6))
+console.log(InfiniteSum2(34, 545, 2, 21, 56))
