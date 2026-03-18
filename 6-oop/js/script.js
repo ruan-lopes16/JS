@@ -27,3 +27,31 @@ console.log(person.getName())
 
 person.setName("Ana") // modificando nome
 console.log(person.getName())
+
+// 3 - prototype
+const text = "wasd"
+console.log(Object.getPrototypeOf(text)) // vendo ancestral de text --- vemos funções e propriedades
+
+const bool = true
+console.log(Object.getPrototypeOf(bool))
+
+const arr = []
+console.log(arr.length)
+console.log(Object.getPrototypeOf(arr)) // da um objeto sem nome, pois já é um objeto >>> Array() // ver constructor
+
+// 4 - mais - prototypes
+const myObject = { // pai, mas tem o pai do pai que é o Object
+    a: "b"
+}
+
+console.log(Object.getPrototypeOf(myObject)) // ver constructor
+console.log(Object.getPrototypeOf(myObject) === Object.prototype) // true
+
+const my2Object = Object.create(myObject) // criando objeto a partir de outro
+console.log(my2Object) // não aparece nada, mas ao clicar aparece o prototype dentro (myObject), e tem outro prototype que é o pai
+// ainda mantem todas as props e métodos
+
+console.log(my2Object.a)
+console.log(Object.getPrototypeOf(my2Object) === myObject) // true
+
+// myObject é prototype(pai) de my2Object, mas o pai de todos é o Object
