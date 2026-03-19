@@ -55,3 +55,22 @@ console.log(my2Object.a)
 console.log(Object.getPrototypeOf(my2Object) === myObject) // true
 
 // myObject é prototype(pai) de my2Object, mas o pai de todos é o Object
+
+// 5 - classes básicas
+const dog = { // molde para os cachorros
+    breed: null, // inicialmente nula
+    paws: 4
+}
+
+// classes com base na classe pai - molde
+const germanShepherd = Object.create(dog) // criando novo objeto a partir do cachorro
+
+germanShepherd.breed = "German Shepherd"
+
+console.log(germanShepherd)
+console.log(germanShepherd.paws) // propriedade do pai que não foi alterada ou adicionada ao filho
+
+const bullDog = Object.create(dog)
+bullDog.breed = "Bulldog"
+
+console.log(bullDog)
