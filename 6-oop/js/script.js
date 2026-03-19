@@ -94,3 +94,13 @@ const mel = createDog("Mel", "Poodle")
 console.log(mel)
 
 console.log(Object.getPrototypeOf(bob)) // objeto vazio e depois o Object
+
+// 7 - função construtora - new
+// objeto criado por meio de uma função e retorna um objeto pronto --- antes era vazio
+function Dog(name, breed) {     // coloco a primeira letra maiuscula para entender que é uma classe
+    this.name = name
+    this.breed = breed
+}
+
+const husky = new Dog("Apollo", "Husky Sibiriano")
+console.log(husky) // já me devolve o prototype - Object
