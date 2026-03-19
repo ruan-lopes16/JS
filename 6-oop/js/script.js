@@ -74,3 +74,23 @@ const bullDog = Object.create(dog)
 bullDog.breed = "Bulldog"
 
 console.log(bullDog)
+
+// 6 - funções como classe - função construtora
+function createDog(name, breed) {
+    const dog = Object.create({}) // cria objeto vazio na função
+
+    // coloco as propriedades de acordo com o que veio como argumento
+    dog.name = name
+    dog.breed = breed
+
+    return dog
+    
+}
+
+const bob = createDog("Bob", "Shitzu")
+console.log(bob)
+
+const mel = createDog("Mel", "Poodle")
+console.log(mel)
+
+console.log(Object.getPrototypeOf(bob)) // objeto vazio e depois o Object
