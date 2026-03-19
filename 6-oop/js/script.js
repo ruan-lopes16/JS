@@ -104,3 +104,11 @@ function Dog(name, breed) {     // coloco a primeira letra maiuscula para entend
 
 const husky = new Dog("Apollo", "Husky Sibiriano")
 console.log(husky) // já me devolve o prototype - Object
+
+// 8 - métodos na função construtora
+Dog.prototype.howl = function() {   // acesso a classe e o seu prototype e adiciono um método dentro de prototype
+    console.log("Aaaauuuuuu!")
+}
+
+console.log(husky) // agora já tem o 'howl' dentro do objeto > dentro do prototype
+husky.howl()
