@@ -152,3 +152,26 @@ Truck.prototype.motor = "V8"
 const volvo = new Truck(4, "white")
 
 console.log(volvo.motor)
+
+// 11 - substituindo props >>> prototype
+class Human {
+    constructor(name, age){
+        this.name = name
+        this.age = age
+    }
+}
+
+const ruan = new Human("Ruan", 23)
+console.log(ruan)
+
+console.log(Human.prototype.age) // antes de colocar o prototype 
+
+// trocando idade da classe por um valor já predefinido
+// me da possibilidade de acessar esse valor como se fosse uma referencia
+Human.prototype.age = "undefined - prototype" 
+// pode ser usado quando um objeto ainda não foi instanciado -- não muda os objetos instanciados nessa classe
+// serve como validação para mostrar os dados da classe e não do objeto criado a partir dela 
+
+console.log(ruan.age)
+
+console.log(Human.prototype.age) // agora quando eu acesso a idade me da indefinida, por ter setado isso como padrão
