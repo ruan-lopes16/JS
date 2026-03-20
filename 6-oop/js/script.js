@@ -112,3 +112,43 @@ Dog.prototype.howl = function() {   // acesso a classe e o seu prototype e adici
 
 console.log(husky) // agora já tem o 'howl' dentro do objeto > dentro do prototype
 husky.howl()
+
+// 9 - classes es6
+class DogClass {
+    constructor(name, breed){
+        this.name = name
+        this.breed = breed
+    } // função constructor para iniciar as props
+}
+
+const tobby = new DogClass("Tobby", "Hottweiller")
+console.log(Object.getPrototypeOf(tobby)) // o construtor q é classe dogclass e o Object (convencional)
+console.log(tobby)
+
+// 10 - mais de classes
+class Truck {
+    constructor(axles, color){
+        this.axles = axles
+        this.color = color
+    }
+    // adicionando método
+    describeTruck(){
+        console.log(`This truck have ${this.axles} axles and it's color is ${this.color}`)
+    }
+}
+
+const scania = new Truck(6, "red")
+
+console.log(scania)
+scania.describeTruck()
+
+// NAO CONSIGO FAZER
+Truck.motor = "V8"
+console.log(Truck) // não foi adicionado a nova prop
+
+// maaaas se eu acessar o prototype
+Truck.prototype.motor = "V8"
+
+const volvo = new Truck(4, "white")
+
+console.log(volvo.motor)
