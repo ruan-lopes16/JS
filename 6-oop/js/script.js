@@ -175,3 +175,24 @@ Human.prototype.age = "undefined - prototype"
 console.log(ruan.age)
 
 console.log(Human.prototype.age) // agora quando eu acesso a idade me da indefinida, por ter setado isso como padrão
+
+// 12 - symbol
+class Airplane {
+    constructor(brand, turbine) {
+        this.brand = brand
+        this.turbine = turbine
+    }
+}
+
+const wings = Symbol() // declarando Symbol
+const pilots = Symbol()
+
+Airplane.prototype[wings] = 2 // adicionando uma nova propriedade imutável no objeto
+Airplane.prototype[pilots] = 3
+
+const boeing = new Airplane("Boeing", 10)
+console.log(boeing)
+
+// acessando symbol - pelo proprio nome
+console.log(boeing[wings])
+console.log(boeing[pilots])
