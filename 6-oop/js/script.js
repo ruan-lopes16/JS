@@ -241,3 +241,11 @@ class Wolf extends Mammifer{
 
 const shark = new Wolf(4, "Shark")
 console.log(shark)
+
+// 15 - instanceof
+console.log(shark instanceof Wolf) // vendo se shark(objeto) é instancia de Wolf >>> true
+console.log(Wolf instanceof Mammifer) // vendo se a classe Wolf é instancia de Mammifer // falso
+// somente objeto >>> classe 
+
+console.log(new Wolf(4, "Test") instanceof Mammifer) // true
+console.log(new Post("a", "b") instanceof Dog) // false
