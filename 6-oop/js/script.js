@@ -196,3 +196,30 @@ console.log(boeing)
 // acessando symbol - pelo proprio nome
 console.log(boeing[wings])
 console.log(boeing[pilots])
+
+// 13 - getter e setter
+class Post {
+    constructor(title, description, tags){
+        this.title = title
+        this.description = description
+        this.tags = tags
+    }
+
+    get showTitle(){
+        return `You are reading: ${this.title}`
+    }
+
+    set addTags(tags){
+        const tagsArray = tags.split(", ") // pego as tags e transformo em um array e separo por elas por virgula >>> vira uma string
+        this.tags = tagsArray
+    }
+     
+}
+
+const myPost = new Post("Hello World", "This is a post about programming") // não sou obrigado a passar todos os parametros do contructor
+console.log(myPost)
+
+console.log(myPost.showTitle)
+
+myPost.addTags = "programming, js, html, introduction"
+console.log(myPost)
