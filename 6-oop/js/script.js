@@ -223,3 +223,21 @@ console.log(myPost.showTitle)
 
 myPost.addTags = "programming, js, html, introduction"
 console.log(myPost)
+
+// 14 - herança
+class Mammifer {
+    constructor(paws){
+        this.paws = paws
+    }
+}
+
+class Wolf extends Mammifer{
+    constructor(paws, name){
+        // mandando para a classe pai
+        super(paws, paws) // estou enviando prop de paws de Wolf para alterar valor paws de Mammifer
+        this.name = name
+    }
+}
+
+const shark = new Wolf(4, "Shark")
+console.log(shark)
