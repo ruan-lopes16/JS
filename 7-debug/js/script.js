@@ -68,3 +68,10 @@ checkNumber(5)
 checkNumber("10")
 checkNumber({})
 checkNumber("test")
+
+// 5 - exception - error
+let x = 10
+
+if(x != 11){
+    throw new Error("The value of X cannot be other than 11")
+}
