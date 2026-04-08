@@ -82,3 +82,19 @@ try {
 } catch(error){
     console.log(`program error: ${error}`)
 }
+
+// 7 - finally
+try{
+    const value = checkNumber("wasd")
+
+    if(!value){
+        throw new Error("invalid value")
+    }
+
+} catch(error){
+    console.log(`Problem: ${error}`)
+
+} finally{
+    console.log("code was executed")
+    
+}
