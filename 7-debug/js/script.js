@@ -72,6 +72,13 @@ checkNumber("test")
 // 5 - exception - error
 let x = 10
 
-if(x != 11){
+/*if(x != 11){
     throw new Error("The value of X cannot be other than 11")
+}*/
+
+// 6 - try-catch
+try {
+    const sum = x + y
+} catch(error){
+    console.log(`program error: ${error}`)
 }
