@@ -39,7 +39,7 @@ if(c == 1){
 }
 
 // ativando o debugger no navegador
-debugger;
+//debugger;
 
 for(let i = 0; i < d; i++){
     c = c + 2
@@ -50,3 +50,21 @@ console.log("executou o loop");
 if (c > 5){
     c = 25
 }
+
+// 4 - tratamento de dado por função
+function checkNumber(num){
+    const result = Number(num) // convertendo qlqr tipo de dado em numero
+
+    if(Number.isNaN(result)){
+        console.log("incorrect value")
+        return
+    }
+
+    console.log("valid value")
+    return result
+}
+
+checkNumber(5)
+checkNumber("10")
+checkNumber({})
+checkNumber("test")
