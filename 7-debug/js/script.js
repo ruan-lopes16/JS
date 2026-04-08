@@ -96,5 +96,17 @@ try{
 
 } finally{
     console.log("code was executed")
-    
 }
+
+// 8 - assertions
+function checkArray(arr){
+
+    if(arr.length === 0){
+        throw new Error("Array must have elements")
+    } else {
+        console.log(`Array has ${arr.length} elements`)
+    }
+}
+
+//checkArray([])
+checkArray([1, 2, 3, 4])
