@@ -1,3 +1,4 @@
+/*
 // 1 - setTimeout
 console.log("has not yet executed")
 
@@ -14,7 +15,7 @@ console.log("has not yet executed")
 /*setInterval(function () {
     console.log("asynchronous interval")
     console.log("--------------------------------------")
-}, 3000)*/
+}, 3000)
 
 console.log("has not yet executed 2 ")
 console.log("--------------------------------------")
@@ -42,3 +43,30 @@ Promise.resolve(4 * "wasd")
     }
 })
 .catch((err) => console.log(`An error has occurred: ${err}`))
+*/
+// 5 - reject - promise
+function checkNumber(n) {
+    return new Promise((resolve, reject) => { // return new Promise, me permise encadear métodos na função
+
+        if(n > 10){
+            resolve(`higher then 10`)
+        }
+        else{
+            reject(new Error(`number is so lower`))
+        }
+
+    })
+}
+
+const a = checkNumber(20)
+const b = checkNumber(10)
+
+console.log(a,b)
+
+a.then((v) => console.log(`The result is: ${v}`)).catch((err) => 
+    console.log(`An error has occurred: ${err}`)
+)
+
+b.then((v) => console.log(`The result is: ${v}`)).catch((err) => 
+    console.log(`An error has occurred: ${err}`)
+)
