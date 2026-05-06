@@ -33,3 +33,12 @@ promise.then(value => { // then, encadeia mais uma execução
 .then((value) => console.log(`now is: ${value}`))
 
 console.log("another code")
+
+// 4 - catch - promises
+Promise.resolve(4 * "wasd")
+.then((n) => {
+    if(Number.isNaN(n)){
+        throw new Error("Incorrect values")
+    }
+})
+.catch((err) => console.log(`An error has occurred: ${err}`))
