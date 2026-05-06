@@ -18,3 +18,18 @@ console.log("has not yet executed")
 
 console.log("has not yet executed 2 ")
 console.log("--------------------------------------")
+
+// 3 - promises
+const promise = Promise.resolve(5 + 5) // resolve bloco de código que está dentro de parenteses
+
+console.log("some code")
+
+promise.then(value => { // then, encadeia mais uma execução
+    console.log(`sum is: ${value}`) 
+    return value // para continuar trabalhando com esse valor
+}) 
+// transportando valor por etapas
+.then((value) => value - 1)
+.then((value) => console.log(`now is: ${value}`))
+
+console.log("another code")
