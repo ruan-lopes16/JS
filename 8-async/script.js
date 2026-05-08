@@ -70,3 +70,26 @@ a.then((v) => console.log(`The result is: ${v}`)).catch((err) =>
 b.then((v) => console.log(`The result is: ${v}`)).catch((err) => 
     console.log(`An error has occurred: ${err}`)
 )
+
+// 6 - all - promises
+const p1 = new Promise((resolve, reject) => {    
+    setTimeout(function(){
+        resolve(10) // mostrar 10
+    }, 1000)
+})
+
+const p2 = Promise.resolve(10+10) // resultado de 10 + 10 >>> 20
+
+const p3 = new Promise((resolve, reject) => {
+    if(30 > 10){
+        resolve(30) // mostre 30
+    } else{
+        reject("Error!") // se não mostre erro
+    }
+})
+
+/// situação que eu preciso do resultado das 3 para faze algo
+// então resolvendo tudo de uma vez... [] promessas para resolver >> encadeia then pois tbm retorna promessa, onde pego os valores
+Promise.all([p1, p2, p3]).then((values) => console.log(values))
+
+// como a primeira tem time - só é mostrado quando todas estiverem resolvidas, ou seja, depois de 1 segundo
