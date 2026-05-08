@@ -93,3 +93,16 @@ const p3 = new Promise((resolve, reject) => {
 Promise.all([p1, p2, p3]).then((values) => console.log(values))
 
 // como a primeira tem time - só é mostrado quando todas estiverem resolvidas, ou seja, depois de 1 segundo
+
+// 7 - async functions
+
+async function delaySum(a, b) {
+    return a + b
+}
+
+// com async, a função já retorna uma promessa, ou seja, posso usar then para pegar o valor
+delaySum(2, 4).then((value) => {
+    console.log(`The result is: ${value}`)
+})
+// executa primeiro o console.log, depois a função assíncrona, pois ela é colocada na fila de tarefas, ou seja, só é executada depois que o código síncrono for executado
+console.log("test async")
