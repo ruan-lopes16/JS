@@ -106,3 +106,21 @@ delaySum(2, 4).then((value) => {
 })
 // executa primeiro o console.log, depois a função assíncrona, pois ela é colocada na fila de tarefas, ou seja, só é executada depois que o código síncrono for executado
 console.log("test async")
+
+// 8 - assertions - await
+function delayResolve() { // vem de algum lugar como promise
+    return new Promise((resolve) => {
+        setTimeout(function() {
+            resolve("promise resolved after 2 seconds")
+        }, 2000)
+})
+}
+
+// lidando com camada e resposta - a partir do await
+async function callAsync() {
+    console.log("calling async function... waiting for result")
+    const result = await delayResolve() // espera a resposta da função assíncrona, ou seja, só continua depois que a promessa for resolvida
+    console.log(`The result is: ${result}`)
+}
+
+callAsync()
