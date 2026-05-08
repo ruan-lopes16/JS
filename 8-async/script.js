@@ -124,3 +124,19 @@ async function callAsync() {
 }
 
 callAsync()
+
+// 9 - generators
+function* generator(){
+    // etapas a cada execução terá um resultado diferente por conta do yield
+    yield 1
+    yield 2
+
+}
+
+const gen = generator() // preciso chamá-lo em uma variavel para executar - para acessar valores
+
+// pego os valores do generator com next()
+console.log(gen.next().value)
+console.log(gen.next().value) 
+
+// guarda em memória esse espaço de eecução e entrega o valor quando preciso - ao invocar o generator
